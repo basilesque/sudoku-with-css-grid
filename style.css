@@ -1,11 +1,13 @@
  * {
      font-family: 'Kdam Thmor Pro', sans-serif;
      font-size: 20px;
+     cursor: default;
+     user-select: none;
  }
 
-body {
-    background: linear-gradient(to left, rgb(34, 44, 51) 28px,rgb(63, 43, 62)77%, rgb(41, 72, 72)); 
-}
+ body {
+     background: linear-gradient(to left, rgb(34, 44, 51) 28px, rgb(63, 43, 62)77%, rgb(41, 72, 72));
+ }
 
  .big-square-grid-container {
      margin-top: 7%;
@@ -37,4 +39,15 @@ body {
  .little-square-grid {
      background-color: rgba(85, 85, 195, 0.355);
      border-radius: 5px;
+ }
+
+ .little-square-grid:hover {
+     transform: scale(1.1);
+     box-shadow: 5px 5px 5px rgb(65, 43, 64);
+     cursor: pointer;
+ }
+
+ .little-square-grid:active {
+     transform: scale(0.9);
+     cursor: pointer;
  }
